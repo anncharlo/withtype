@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
-import { init, run } from '../wowolib/wowo';
+import { wowoinit, woworun } from '../wowolib/wowo';
 
 const IndexPage = () => {
+  const a = wowoinit();
+  console.log(`"index.tsx" ${a} ${woworun()}`);
   return <> 
   <Layout title="withtype">
     <h1>Hello `withtype`</h1>

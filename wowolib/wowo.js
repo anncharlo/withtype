@@ -1,8 +1,10 @@
-const init = () => {
+function wowoinit() {
   return "init";
 }
 
-const run = () {
+function woworun() {
   return "run";
 }
-export default { init, run }
+
+export { wowoinit, woworun };
+
