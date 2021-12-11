@@ -1,10 +1,9 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
-import { wowoinit, woworun } from '../wowolib/wowo';
+import { init, run } from '../libs/christmas';
 
 const IndexPage = () => {
-  const a = wowoinit();
-  console.log(`"index.tsx" ${a} ${woworun()}`);
+  console.log(`"index.tsx" ${init()} ${run()}`);
   return <> 
   <Layout title="withtype">
     <h1>Hello `withtype`</h1>
@@ -13,6 +12,7 @@ const IndexPage = () => {
         <a>About</a>
       </Link>
     </p>
+  <div id="christmas" />
   </Layout>
   </>
 };
